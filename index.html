@@ -60,17 +60,17 @@
     <img src="neonbg.jpg" alt="Background" class="background-img">
     <div>
         <div class="ascii-art">
-██╗  ██╗██╗███████╗███████╗███████╗ ██████╗ 
-██║  ██║██║██╔════╝██╔════╝██╔════╝██╔═══██╗
-███████║██║█████╗  █████╗  █████╗  ██║   ██║
-██╔══██║██║██╔══╝  ██╔══╝  ██╔══╝  ██║   ██║
-██║  ██║██║███████╗██║     ███████╗╚██████╔╝
-╚═╝  ╚═╝╚═╝╚══════╝╚═╝     ╚══════╝ ╚═════╝ 
+        ______     ________    ________    ________     _______    ________
+      _╱      ╲╲  ╱        ╲  ╱        ╲  ╱        ╲  _╱       ╲  ╱        ╲
+     ╱        ╱╱ ╱         ╱ ╱         ╱ ╱         ╱ ╱         ╱ ╱         ╱
+    ╱         ╱ ╱        _╱ ╱       --╱ ╱         ╱ ╱         ╱ ╱        _╱
+    ╲________╱  ╲________╱  ╲________╱  ╲________╱  ╲________╱  ╲________╱
         </div>
-        <input type="text" id="answer">
+        <div style="margin-top: 20px;"></div>
+        
         <button onclick="checkAnswer()">Submit</button>
         <p id="result"></p>
-        <p class="hidden-text" id="hiddenMessage" style="display:none;">Hidden Message: "Message Unlocked!"</p>
+        <p class="hidden-text" id="hiddenMessage" style="display:none;">Hidden Message: "Delhi_Belly"</p>
     </div>
 
     <script>
@@ -79,7 +79,7 @@
             const result = document.getElementById('result');
             const hiddenMessage = document.getElementById('hiddenMessage');
 
-            if (answer === "hidden") {
+            if (answer === "decode") {
                 result.textContent = "Correct! Here's your hidden message:";
                 hiddenMessage.style.display = "block";
             } else {
